@@ -22,16 +22,14 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr th:each="prestamo: ${prestamos}">
+                    <tr th:each="pago: ${pagos}">
                         <td>-</td>
-                        <td><p th:text="${prestamo.idprestamo}"></p></td>
-                        <td><p th:text="${prestamo.capital}"></p></td>
-                        <td><p th:text="${prestamo.interes}"></p></td>
-                        <td><p th:text="${prestamo.monto}"></p></td>
-                        <td><p th:text="${prestamo.cuotas}"></p></td>
-                        <td><p th:text="${prestamo.fechaprestamo}"></p></td>
-                        <td><a th:href="@{/ver/}" >Ver cuotas</a></td>
-                    
+                        <td><p th:text="${pago.monto}"></p></td>
+                        <td><p th:text="${pago.idpago}"></p></td>
+                        
+                        
+                      
+                   
                     </tr>
 
                 </tbody>

@@ -21,11 +21,11 @@ public class Pagos implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idpago;
+    private Integer idpago;
     
     private Double monto;
     private Double interes;
-    private Long numerocuota;
+    private Integer numerocuota;
     
     @Temporal(TemporalType.DATE)
     private Date fechavencimiento;
@@ -33,4 +33,6 @@ public class Pagos implements Serializable {
     @ManyToOne
     @JoinColumn(name = "idprestamo")
     private Prestamo prestamo;
+
+    
 }

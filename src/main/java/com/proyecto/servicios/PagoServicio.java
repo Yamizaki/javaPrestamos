@@ -4,20 +4,18 @@
  */
 package com.proyecto.servicios;
 
-import com.proyecto.modelos.Prestamo;
+import com.proyecto.modelos.Pagos;
 import java.util.List;
 
 /**
  *
  * @author lol
  */
-public interface PrestamoServicio {
+public interface PagoServicio {
     
-    public List<Prestamo> listarPrestamos();
+    public List<Pagos> listarPagos();
     
-    public void guardar(Prestamo prestamo);
+    public void guardar(Pagos pagos);
     
- 
-    
-    public Prestamo encontrarPrestamo(Prestamo prestamo);
+    public Pagos encontrarPago(Integer id);
 }

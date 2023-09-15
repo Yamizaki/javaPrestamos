@@ -1,9 +1,12 @@
 package com.proyecto.dao;
 
 
+import com.proyecto.modelos.Pagos;
 import com.proyecto.modelos.Prestamo;
 import org.springframework.data.repository.CrudRepository;
 
-public interface PrestamoDao extends CrudRepository<Prestamo, Integer>{
+public interface PagoDao extends CrudRepository<Pagos, Integer>{
+
+  
     
 }

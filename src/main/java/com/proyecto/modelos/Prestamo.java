@@ -22,12 +22,12 @@ public class Prestamo implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idprestamo;
+    private Integer idprestamo;
     
     private Double capital;
     private Double interes;
     private Double monto;
-    private Long cuotas;
+    private Integer cuotas;
     
     @Temporal(TemporalType.DATE)
     private Date fechaprestamo;

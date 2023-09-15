@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+    <body>
+
+   
+        <a th:href="@{/}"> Inicio</a>
+        <h1>Agregar Personas</h1>
+        
+        <br/>
+        <form th:action="@{/guardar}" method="post" th:object="${prestamo}">
+            
+            <input type="hidden" name="idprestamo" th:field="*{idprestamo}"/>
+            
+            <label for="capital">Capital</label>
+            <input type="number" name="capital" th:field="*{capital}" required="true"/>
+            
+            <label for="cuotas">Cuotas</label>
+            <input type="number" name="cuotas" th:field="*{cuotas}" required="true"/>
+            
+            <label for="interes">Interes</label>
+            <input type="number" name="interes" th:field="*{interes}" required="true"/>
+            
+            
+            
+            <input type="submit" name="guardar" value="Guardar"/>
+            
+            
+        </form>
+        
+        
+        
+        
+        
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
